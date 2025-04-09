@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Converter</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+      <h1>Base Converter</h1>
+      <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal)</p>
+  
+      <div class="inline-group">
+        <label for="num"><b>Enter a number :</b></label>
+        <input type="text" id="num" name="num" />
+      </div>
+      
+  
+      <h3>: בחירה הבסיס המקורי </h3>
+      <div class="inline-group">
+        <span class="group-label"><b>From:</b></span>
+        <div class="base-buttons" id="from-buttons">
+          <button class="base-btn" onclick="setFromBase(2, this)">Binary (2)</button>
+          <button class="base-btn" onclick="setFromBase(8, this)">Octal (8)</button>
+          <button class="base-btn" onclick="setFromBase(10, this)">Decimal (10)</button>
+          <button class="base-btn" onclick="setFromBase(16, this)">Hexadecimal (16)</button>
+        </div>
+      </div>
+      
+
+      <h3> : בחירה הבסיס להמיר </h3>
+      <div class="inline-group">
+        <span class="group-label"><b>To:</b></span>
+        <div class="base-buttons" id="to-buttons">
+          <button class="base-btn" onclick="setToBase(2, this)">Binary (2)</button>
+          <button class="base-btn" onclick="setToBase(8, this)">Octal (8)</button>
+          <button class="base-btn" onclick="setToBase(10, this)">Decimal (10)</button>
+          <button class="base-btn" onclick="setToBase(16, this)">Hexadecimal (16)</button>
+        </div>
+      </div>
+      
+    
+  
+      <div class="convert-btn-container">
+        <button class="convert-btn" onclick="convert()">Convert</button>
+      </div>
+  
+      <div class="inline-group">
+        <label for="resultnum"><b>Result :</b></label>
+        <input type="text" id="resultnum" readonly />
+      </div>
+      
+  
+    <script src="script.js"></script>
+  </body>

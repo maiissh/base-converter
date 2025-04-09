@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: rgb(241, 239, 244);
+  margin: 0;
+  padding: 20px;
+  color: #4a4a54;
+}
+
+h1, p {
+  margin-bottom: 20px;
+  color: #4a4a54;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+.inline-group input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #4a4a54;
+  box-sizing: border-box;
+}
+
+
+.group-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #4a4a54;
+  min-width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+}
+
+.base-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.base-btn {
+  width: 130px;
+  height: 50px;
+  font-size: 14px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.base-btn:nth-child(1) { background-color: #ff5757; }
+.base-btn:nth-child(2) { background-color: #0cc0df; }
+.base-btn:nth-child(3) { background-color: #8c52ff; }
+.base-btn:nth-child(4) { background-color: #ffde59; color: black; }
+
+.base-btn.selected {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px #4a4a54;
+}
+
+
+.convert-btn {
+  background-color: #4a4a54;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.convert-btn:hover {
+  background-color: #333;
+}
+
+#resultnum {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #4a4a54;
+}
