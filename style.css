@@ -1,3 +1,5 @@
+
+/* page container */
 body {
   text-align: center;
   font-family: sans-serif;
@@ -7,11 +9,13 @@ body {
   color: #4a4a54;
 }
 
+  /* heading and paragraph */
 h1, p {
   margin-bottom: 20px;
   color: #4a4a54;
 }
 
+  /* input group container */
 .inline-group {
   display: flex;
   align-items: center;
@@ -21,6 +25,7 @@ h1, p {
   flex-wrap: wrap;
 }
 
+  /* input field */
 .inline-group input {
   padding: 10px;
   font-size: 16px;
@@ -35,6 +40,7 @@ h1, p {
   box-sizing: border-box;
 }
 
+  /* input label */
 .group-label {
   font-weight: bold;
   font-size: 16px;
@@ -45,6 +51,7 @@ h1, p {
   text-align: right;
 }
 
+  /* button group container */
 .base-buttons {
   display: flex;
   flex-wrap: nowrap;
@@ -56,10 +63,12 @@ h1, p {
   scrollbar-width: none;
 }
 
+  /* scrollbar removal */
 .base-buttons::-webkit-scrollbar {
   display: none;
 }
 
+  /* all base buttons */
 .base-btn {
   flex: 0 0 130px;
   height: 50px;
@@ -81,11 +90,13 @@ h1, p {
 .base-btn:nth-child(3) { background-color: #8c52ff; }
 .base-btn:nth-child(4) { background-color: #ffde59; color: black; }
 
+  /* selected button */
 .base-btn.selected {
   transform: scale(1.1);
   box-shadow: 0 0 0 3px #4a4a54;
 }
 
+  /* convert button */
 .convert-btn {
   background-color: #4a4a54;
   color: white;
@@ -102,6 +113,7 @@ h1, p {
   background-color: #333;
 }
 
+  /* result field */
 #resultnum {
   padding: 10px;
   font-size: 16px;
@@ -116,6 +128,7 @@ h1, p {
   box-sizing: border-box;
 }
 
+  /* responsive layout for small screens */
 @media (max-width: 768px) {
   .base-btn,
   .convert-btn {
