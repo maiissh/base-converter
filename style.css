@@ -20,10 +20,12 @@ h1, p {
   margin: 25px 0;
   flex-wrap: wrap;
 }
+
 .inline-group input {
   padding: 10px;
   font-size: 16px;
-  width: 200px;
+  width: 100%;
+  max-width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-weight: bold;
@@ -32,7 +34,6 @@ h1, p {
   color: #4a4a54;
   box-sizing: border-box;
 }
-
 
 .group-label {
   font-weight: bold;
@@ -46,12 +47,21 @@ h1, p {
 
 .base-buttons {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.base-buttons::-webkit-scrollbar {
+  display: none;
 }
 
 .base-btn {
-  width: 130px;
+  flex: 0 0 130px;
   height: 50px;
   font-size: 14px;
   padding: 0;
@@ -76,7 +86,6 @@ h1, p {
   box-shadow: 0 0 0 3px #4a4a54;
 }
 
-
 .convert-btn {
   background-color: #4a4a54;
   color: white;
@@ -96,11 +105,46 @@ h1, p {
 #resultnum {
   padding: 10px;
   font-size: 16px;
-  width: 200px;
+  width: 100%;
+  max-width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
   background-color: white;
   color: #4a4a54;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .base-btn,
+  .convert-btn {
+    width: auto;
+    max-width: none;
+  }
+
+  .inline-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inline-group input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .group-label {
+    text-align: center;
+    height: auto;
+    line-height: normal;
+  }
 }
